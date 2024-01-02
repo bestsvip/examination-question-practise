@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./files/css/tk.css">
+    <title>题库训练</title>
+</head>
+
+<body style="padding: 10px">
+    <div id="yanshi">
+        <h2>选择您想练习的题库及其题型
+            <span style="font-size: 12px;">（仅限题库文件夹内的表格及导出的错题——无需考虑文件名——题库内的题型与选择的题型需相对应）</span>
+        </h2>
+        <table width="100%" style="margin-top: -20px;">
+            <tbody>
+                <tr>
+                    <td style="border-bottom:1px solid #999;">
+                        <!-- <span style="font-size: 12px;">（先选左侧题型再导入）</span> -->
+                        <input type="file" id="excel" accept=".csv">
+                    </td>
+                    <td style="border-bottom:1px solid #999;" align="right">
+                        <select id="press">
+                            <option>csv版</option>
+                            <option>docx版(仅适配WPS)</option>
+                        </select>
+                        <button style="margin-bottom: 20px;" class="input" onclick="dct()">导出错题</button>
+                        <button style="margin-bottom: 20px;" class="input" onclick="ct2ct()">错题直导</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <span class="input" style="padding: 10px;">
+                            <button class="input" onclick="tiao()"><span>跳过本题</span></button>
+                        </span>
+                        <span class="input" style="padding: 10px;margin-left: 20px;">
+                            <button onclick="xz()">跳</button>
+                            <span>到第<input class="inputtext" type="text" id="xz"
+                                    style="width:30px;margin: 0 4px 0 4px;text-align: center;" max="162">题</span>
+                            <span id="gongjiti"></span>
+                        </span>
+                        <span id="xianshidaan" style="padding: 10px;margin-left: 20px;" class="input">
+                            <button class="input" onclick="xianshidaan()"><span>显示答案</span></button>
+                        </span>
+                    </td>
+                    <td align="right">
+                        <br>
+                        <div>声音
+                            <input type="radio" name="vioce" value="A"
+                                onclick="vioce='yes';localStorage.setItem('vioce', vioce)" checked="">开启
+                            <input id="no" type="radio" name="vioce" value="B"
+                                onclick="vioce='no';localStorage.setItem('vioce', vioce)">关闭
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3 style="margin-top: -6px;">做题区
+            <span style="font-size: 12px;">（选错会发出错误提示音并清空您的答案——红字错误提示）</span>
+        </h3>
+        <div id="table"></div>
+        <center><button class="next" onclick="yesno(-1)">上一题</button>&nbsp;<button class="next"
+                onclick="yesno(1)">下一题</button></center>
+        <p>&nbsp;</p>
+    </div>
+    <script src="./files/js/ctdr.js"></script>
+</body>
+
+</html>

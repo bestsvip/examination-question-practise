@@ -1,0 +1,76 @@
+#zuoti::first-line {
+    font-size: larger;
+}
+
+#zuoti span {
+    line-height: 40px
+}
+
+#excel {
+    margin-left: 10px;
+}
+
+.next {
+    width: 200px;
+    height: 60px;
+    font-size: 1.2em !important;
+    background-color: #3399ff;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.input {
+    width: 100px;
+    height: 30px;
+    font-size: 1em !important;
+    background-color: #3399ff;
+    color: #fff;
+    border: 0;
+}
+
+.inputtext {
+    height: 20px;
+    margin: 0;
+    padding: 2px;
+    outline: none;
+    border: 0;
+}
+
+button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#press {
+    height: 30px;
+    margin: 0;
+    padding: 2px;
+    outline: none;
+    border: 0;
+    border-radius: 6px;
+    background-color: #f2f4f2;
+}
+
+#table {
+    padding: 20px;
+}
+
+#answerr h1 {
+    font-size: 20px;
+}
+
+#yanshibuzhou {
+    width: 400px;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    color: #000;
+    background-color: #000;
+    line-height: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    visibility: visible;
+    box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27), 2px 0.25em 24px 0 rgba(90, 125, 188, 0.05);
+}
