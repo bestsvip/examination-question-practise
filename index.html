@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1+X中级数据分析 题库训练</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            padding: 10%;
+            margin: 10%;
+            height: 400px;
+            overflow: hidden;
+            max-height: max-content;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 10%;
+            box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27), 2px 0.25em 24px 0 rgba(90, 125, 188, 0.05);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            margin: 10px;
+            font-size: 1em;
+            background-color: #3399ff;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+
+        span {
+            float: left;
+            width: 500px;
+            display: block;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <o>
+    <span>
+        <a href='items\题库训练.htm'>
+            <div>
+                <h1>理论题库</h1><br>
+                《仅支持文件内置理论题库(.csv)》<p>
+                <p style="color:#999;text-align: left;line-height: 30px;">导出错题：<br>“csv” 可在“错题导入”中导入错题<br>“docx”
+                    导出错题Word（仅适配WPS）</p>
+                <a href='items\题库训练.htm?lltk'><button>操作说明</button></a>
+                <br>
+                <a href='items\题库训练.htm'><button>我已了解，直接进入</button></a>
+            </div>
+        </a>
+    </span>
+    <span>
+        <a href='items\题库训练(错题版).htm'>
+            <div>
+                <h1>错题导入</h1><br>
+                《仅支持理论题库导出的错题(.csv)》<p>
+                <p style="color:#999;">需先选择题型再导入错题</p>
+                <a href='items\题库训练(错题版).htm?ctdr'><button>操作说明</button></a>
+                <br>
+                <a href='items\题库训练(错题版).htm'><button>我已了解，直接进入</button></a>
+            </div>
+        </a>
+    </span>
+</o>
+    <center style="clear: both;">
+        <p style="color:#999;text-align: center">Author：电商2111 夏震宇</p>
+        <p style="color:#999;text-align: center">(公测后将不再更新，如遇到bug，点此<input style="font-size: 1em;
+            background-color: #3399ff;
+            color: #fff;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border: 0;
+            cursor: pointer;
+            border-radius: 10%;
+            margin: 10px;" type='button' onclick="xiufu()" value="修复">) 仅供练习，不可作用于商业用途</p>
+        <p style="height: 10px;"></p>
+    </center>
+    <script>
+        function xiufu(){
+            confirmed = confirm('修复会清理缓存，包括但不限于做题进度、错题缓存等\n<导出的错题 (.csv)/(.docx) 不会被清理>')
+            if(confirmed){
+            localStorage.clear()
+            alert('已成功修复')
+            }
+        }
+    </script>
+</body>
+
+</html>
